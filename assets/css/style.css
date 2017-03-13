@@ -1,41 +1,90 @@
-
-.main-button-container {
-  margin-top: 175px;
-  max-width: 610px;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  background-image: url("../images/gameOfThronesBackground2.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
-.timer-p {
-  margin-top: 40px;
+@font-face {
+    font-family: gameOfThronesFont;
+    src: url(../images/gameOfThronesFont.ttf);
 }
 
-.answer:hover {
-  background: pink;
+#title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: gameOfThronesFont;
+  color: #ffffff;
+  text-shadow: 3px 3px black;
+}
+
+#instructions {
+  color: #fac832;
+  text-shadow: 3px 3px black;
+}
+
+.start-btn {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #fac832;
+}
+
+#questionText {
+  color: #fac832;
+  text-shadow: 3px 3px black;
 }
 
 .answer {
-  padding-top: 7px;
-  height: 45px;
-  color: white;
-  padding-left: 14px;
-  background-color: blue;
-  border-radius: 4px;
-}
-
-.first-answer {
+  height: 80px;
+  width: 160px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ededea;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
   margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border: 2px solid #fac832;
 }
 
-.reset-button {
-  margin-top: 40px;
+#rightFeedback,
+#wrongFeedback,
+#unansweredFeedback,
+#results {
+  color: #fac832;
+  text-shadow: 3px 3px black;
 }
 
-.summary-correct {
-  margin-top: 40px;
+#results {
+  font-family: gameOfThronesFont;
 }
 
-body {
+.timer-wrapper {
+  color: #ffffff;
+  font-family: gameOfThronesFont;
+}
+
+.timer {
+  color: #fac832;
+  font-size: 30px;
+  font-family: gameOfThronesFont;
+}
+
+.summary-right,
+.summary-wrong,
+.summary-unanswered {
+  color: #fac832;
+  text-shadow: 3px 3px black;
+}
+
+.reset-btn {
+  margin-top: 20px;
   background-color: #ffffff;
-  color: blue;
+  color: #333333;
+  border: 1px solid #fac832;
 }
